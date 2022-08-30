@@ -1,5 +1,6 @@
 
 import type React from 'react';
+import Container from './Container';
 
 interface HeaderProps {
 }
@@ -9,7 +10,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <header className="h-24 flex items-center z-20">
 		<nav className="w-100 flex-1">
-			<div className="md:w-9/12 sm:w-auto md:mx-auto mx-5">
+			<Container>
 				<div className="flex justify-between">
 					<div className="flex items-center">
 						<h2>
@@ -40,7 +41,7 @@ const Header: React.FC<HeaderProps> = () => {
 						</div>
 					</ul>
 				</div>
-			</div>
+			</Container>
 		</nav>
 	</header> 
   );

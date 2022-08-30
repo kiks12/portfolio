@@ -1,21 +1,36 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
+import Container from '../components/Container';
 ---
 
 <Layout title="Portfolio">
 	<Header client:idle/>
-	<main>
+
+	<main class="w-screen">
+		<Container>
+			<div class="w-100 flex">
+				<div class="">
+					<h1>
+						<strong>
+							Francis James Tolentino
+						</strong> 
+					</h1>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+			</div>
+		</Container>
 	</main>
-	<div class="">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+	<!-- <div> -->
+		<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
 			<path fill="#0099ff" fill-opacity="1" d="M0,256L80,256C160,256,320,256,480,240C640,224,800,192,960,192C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
 		</svg>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
 			<path fill="#0099ff" fill-opacity="1" d="M0,64L60,90.7C120,117,240,171,360,208C480,245,600,267,720,234.7C840,203,960,117,1080,101.3C1200,85,1320,139,1380,165.3L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-		</svg>
-	</div>
-	</Layout>
+		</svg> -->
+	<!-- </div> -->
+</Layout>
 
 <style>
 	:root {
