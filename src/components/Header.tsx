@@ -18,12 +18,12 @@ const Header: React.FC<HeaderProps> = () => {
 								Icon
 							</span>
 						</h2>
-						<ul className="flex mx-5 items-center">
+						{/* <ul className="flex mx-5 items-center">
 							<li className="mx-2 cursor-pointer hover:text-slate-500">Portfolio</li>
 							<li className="mx-2 cursor-pointer hover:text-slate-500">About</li>
-						</ul>
+						</ul> */}
 					</div>
-					<ul className="flex">
+					{/* <ul className="flex">
 						<a href="https://github.com/kiks12">
 							<div className="mx-1 transition-all rounded-full shadow p-2 w-12 h-12 flex justify-center items-center cursor-pointer hover:shadow-lg">
 								<i className='w-100'>
@@ -45,7 +45,9 @@ const Header: React.FC<HeaderProps> = () => {
 								</i>
 							</div>
 						</a>
-					</ul>
+					</ul> */}
+					<button className="bg-cyan-500 hover:bg-cyan-700 transition-all text-white px-8 
+					text-xs rounded-full">Let's work together</button>
 				</div>
 			</Container>
 		</nav>
