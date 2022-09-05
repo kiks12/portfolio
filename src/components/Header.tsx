@@ -24,21 +24,27 @@ const Header: React.FC<HeaderProps> = () => {
 						</ul>
 					</div>
 					<ul className="flex">
-						<div className="mx-1 rounded-full shadow p-2 w-12 h-12 flex justify-center items-center cursor-pointer hover:shadow-lg">
-							<i className='w-100'>
-								<span><img src="/icons8-github-30.svg"/></span>
-							</i>
-						</div>
-						<div className="mx-1 rounded-full shadow p-2 w-12 h-12 flex justify-center items-center cursor-pointer hover:shadow-lg">
-							<i className='w-100'>
-								<span><img src="/icons8-linkedin-2-30.svg"/></span>
-							</i>
-						</div>
-						<div className="mx-1 rounded-full shadow p-2 w-12 h-12 flex justify-center items-center cursor-pointer hover:shadow-lg">
-							<i className='w-100'>
-								<span><img src="/icons8-twitter-30.svg" /></span>
-							</i>
-						</div>
+						<a href="https://github.com/kiks12">
+							<div className="mx-1 transition-all rounded-full shadow p-2 w-12 h-12 flex justify-center items-center cursor-pointer hover:shadow-lg">
+								<i className='w-100'>
+									<span><img src="/icons8-github-30.svg"/></span>
+								</i>
+							</div>
+						</a>
+						<a href="https://www.linkedin.com/in/francis-tolentino-08a428247">
+							<div className="mx-1 transition-all rounded-full shadow p-2 w-12 h-12 flex justify-center items-center cursor-pointer hover:shadow-lg">
+								<i className='w-100'>
+									<span><img src="/icons8-linkedin-2-30.svg"/></span>
+								</i>
+							</div>
+						</a>
+						<a href="https://twitter.com/francisjames12_">
+							<div className="mx-1 transition-all rounded-full shadow p-2 w-12 h-12 flex justify-center items-center cursor-pointer hover:shadow-lg">
+								<i className='w-100'>
+									<span><img src="/icons8-twitter-30.svg" /></span>
+								</i>
+							</div>
+						</a>
 					</ul>
 				</div>
 			</Container>
