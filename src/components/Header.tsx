@@ -18,10 +18,10 @@ const Header: React.FC<HeaderProps> = () => {
 								Icon
 							</span>
 						</h2>
-						{/* <ul className="flex mx-5 items-center">
-							<li className="mx-2 cursor-pointer hover:text-slate-500">Portfolio</li>
-							<li className="mx-2 cursor-pointer hover:text-slate-500">About</li>
-						</ul> */}
+						<ul className="flex mx-10 items-center">
+							<li className="mx-5 cursor-pointer hover:text-slate-500">Portfolio</li>
+							<li className="mx-5 cursor-pointer hover:text-slate-500">About</li>
+						</ul>
 					</div>
 					{/* <ul className="flex">
 						<a href="https://github.com/kiks12">
@@ -46,7 +46,7 @@ const Header: React.FC<HeaderProps> = () => {
 							</div>
 						</a>
 					</ul> */}
-					<button className="bg-cyan-500 hover:bg-cyan-700 transition-all text-white px-8 
+					<button className="bg-indigo-700 hover:bg-indigo-900 transition-all text-white px-8 
 					text-xs rounded-full">Let's work together</button>
 				</div>
 			</Container>
