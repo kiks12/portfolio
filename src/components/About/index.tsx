@@ -2,8 +2,8 @@ import type React from 'react';
 
 const About: React.FC<any> = () => {
   return (
-    <div>
-      <h2>About</h2>
+    <div className='my-24'>
+      <h4 className='text-xs font-medium'>ABOUT</h4>
     </div>
   )
 };

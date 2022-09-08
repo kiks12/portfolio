@@ -13,13 +13,13 @@ const ThreeSplit: React.FC<any> = () => {
           transition={{ duration: 0.5 }}
           className="flex-1"
         >
-          <Card optionalClasses='flex-1 flex flex-col'>
-            <div className="h-32 bg-gray-300 overflow-hidden">
-              <img src="/Development.png" style={{ 'transform':'rotate(-45deg) scale(2.3)'}}  alt="Development"/>
+          <Card optionalClasses='flex-1 flex flex-col h-96'>
+            <div className="h-48 bg-gray-300 overflow-hidden">
+              <img src="/Systems.png" style={{ 'transform':'rotate(-45deg) scale(2.3)'}}  alt="Development"/>
             </div>
-            <div className="p-5">
-              <h3 className='text-lg font-semibold'>Development</h3>
-              <p className='text-xs mt-3'>asfasfasdfasdfsfsadf</p>
+            <div className="p-10">
+              <h3 className='text-xl font-semibold'>Web Apps</h3>
+              <p className='text-xs mt-3'>The Tech stack we use to create Web applications are ReactJS for the Frontend and NodeJS or ExpressJS for the Backend. </p>
             </div>
           </Card>
         </motion.div>
@@ -32,13 +32,13 @@ const ThreeSplit: React.FC<any> = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="ml-7 flex-1"
         >
-          <Card optionalClasses='flex-1 flex flex-col'>
-            <div className="h-32 bg-gray-300 overflow-hidden">
+          <Card optionalClasses='flex-1 flex flex-col h-96'>
+            <div className="h-48 bg-gray-300 overflow-hidden">
               <img src="/Design.png" style={{ 'transform':'rotate(-45deg) scale(2.3)'}}  alt="Development"/>
             </div>
-            <div className="p-5">
-              <h3 className='text-lg font-semibold'>Design</h3>
-              <p className='text-xs mt-3'>asfasfasdfasdfsfsadf</p>
+            <div className="p-10">
+              <h3 className='text-xl font-semibold'>Mobile Apps</h3>
+              <p className='text-xs mt-3'>We create Cross Platform Mobile Applications for prudction using Flutter. </p>
             </div>
           </Card>
         </motion.div>
@@ -51,13 +51,13 @@ const ThreeSplit: React.FC<any> = () => {
           transition={{ duration: 0.5, delay: 1 }}
           className="ml-7 flex-1"
         >
-          <Card optionalClasses='flex-1 flex flex-col'>
-            <div className="h-32 bg-gray-300 overflow-hidden">
-              <img src="/Systems.png" style={{ 'transform':'rotate(-45deg) scale(2.3)'}}  alt="Development"/>
+          <Card optionalClasses='flex-1 flex flex-col h-96'>
+            <div className="h-48 bg-gray-300 overflow-hidden">
+              <img src="/Development.png" style={{ 'transform':'rotate(-45deg) scale(2.3)'}}  alt="Development"/>
             </div>
-            <div className="p-5">
-              <h3 className='text-lg font-semibold'>Systems</h3>
-              <p className='text-xs mt-3'>asfasfasdfasdfsfsadf</p>
+            <div className="p-10">
+              <h3 className='text-xl font-semibold'>UI/UX</h3>
+              <p className='text-xs mt-3'>We also provide UI/UX design materials for clients using Figma prototyping.</p>
             </div>
           </Card>
         </motion.div>
