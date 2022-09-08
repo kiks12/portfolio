@@ -7,7 +7,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ children, optionalClasses }) => {
   return (
-    <div className={"shadow bg-white " + optionalClasses}>
+    <div className={"shadow-lg bg-white " + optionalClasses}>
       {children}
     </div>
   );

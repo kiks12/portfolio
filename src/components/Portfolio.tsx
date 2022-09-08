@@ -31,7 +31,7 @@ const Portfolio: React.FC<any> = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="ml-5 flex-1"
+            className="ml-7 flex-1"
           >
             <Card optionalClasses='flex-1 flex flex-col'>
               <div className="h-32 bg-gray-300 overflow-hidden">
@@ -50,7 +50,7 @@ const Portfolio: React.FC<any> = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
-            className="ml-5 flex-1"
+            className="ml-7 flex-1"
           >
             <Card optionalClasses='flex-1 flex flex-col'>
               <div className="h-32 bg-gray-300 overflow-hidden">
