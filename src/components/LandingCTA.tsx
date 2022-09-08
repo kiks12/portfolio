@@ -4,13 +4,12 @@ const LandingCTA : React.FC<any> = () => {
   return  (
     <section className="w-100 flex h-screen items-center justify-between">
 			<div className="flex-1 flex flex-col justify-center items-center">
-				<h1 className="text-8xl font-semibold text-center tracking-wide leading-tight">
+				<h1 className="text-8xl font-semibold text-center tracking-wide leading-none">
 					Hi I'm Francis 
 					<br />
-					Tolentino
-					<br/>
+					James Tolentino
 				</h1>
-				<h2 className="text-base my-8 font-normal tracking-wider text-center">
+				<h2 className="text-base my-9 font-normal tracking-wider text-center">
 					A 🧑🏻‍💻 Fullstack and 📲 Flutter Developer creating web and mobile <br /> apps for small to medium sized businesses
 				</h2>
 				<div className="flex flex-row w-100 items-center justify-center mt-8">
