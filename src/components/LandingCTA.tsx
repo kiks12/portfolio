@@ -4,7 +4,7 @@ const LandingCTA : React.FC<any> = () => {
   return  (
     <section className="w-100 flex h-screen items-center justify-between">
 			<div className="flex-1 flex flex-col justify-center items-center">
-				<h1 className="text-8xl font-semibold text-center tracking-wide leading-none">
+				<h1 className="text-8xl font-semibold text-center tracking-wide leading-tight">
 					Hi I'm Francis 
 					<br />
 					Tolentino
@@ -16,8 +16,10 @@ const LandingCTA : React.FC<any> = () => {
 				<div className="flex flex-row w-100 items-center justify-center mt-8">
 					<button className="px-8 rounded-lg transition-all text-indigo-700
 					hover:bg-indigo-700 hover:text-white py-2 text-sm">See Portfolio</button>
-					<button className="bg-indigo-700 border border-indigo-700 hover:bg-indigo-900 transition-all text-white px-8 
-					text-sm rounded-md py-2 ml-3">Let's work together</button>
+          <a href="mailto: francistolentino1107@gmail.com">
+            <button className="bg-indigo-700 border border-indigo-700 hover:bg-indigo-900 transition-all text-white px-8 
+            text-sm rounded-md py-2 ml-3">Let's work together</button>
+          </a>
 				</div>
 			</div>
 		</section>

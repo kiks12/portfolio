@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
 import Container from '../components/Container';
 import LandingCTA from '../components/LandingCTA';
+import Portfolio from '../components/Portfolio';
 ---
 
 <Layout title="Portfolio">
@@ -10,7 +11,8 @@ import LandingCTA from '../components/LandingCTA';
 
 	<Container>
 		<LandingCTA client:load/>
-
+		<Portfolio client:visible/>
+		
 		<!-- <section>
 			<div class="flex justify-between items-center">
 				<div class="flex-1">
