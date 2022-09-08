@@ -8,7 +8,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = () => {
 
   return (
-    <header className="h-24 flex items-center z-20">
+    <header className="h-24 flex items-center z-20 fixed top-0 left-0 right-0">
 		<nav className="w-100 flex-1">
 			<Container>
 				<div className="flex justify-between">
@@ -23,31 +23,29 @@ const Header: React.FC<HeaderProps> = () => {
 							<li className="mx-5 cursor-pointer hover:text-slate-500">About</li>
 						</ul>
 					</div>
-					{/* <ul className="flex">
+					<ul className="flex">
 						<a href="https://github.com/kiks12">
-							<div className="mx-1 transition-all rounded-full shadow p-2 w-12 h-12 flex justify-center items-center cursor-pointer hover:shadow-lg">
+							<div className="mx-1 transition-all rounded-full shadow p-2 w-11 h-11 flex justify-center items-center cursor-pointer hover:shadow-lg">
 								<i className='w-100'>
 									<span><img src="/icons8-github-30.svg"/></span>
 								</i>
 							</div>
 						</a>
 						<a href="https://www.linkedin.com/in/francis-tolentino-08a428247">
-							<div className="mx-1 transition-all rounded-full shadow p-2 w-12 h-12 flex justify-center items-center cursor-pointer hover:shadow-lg">
+							<div className="mx-1 transition-all rounded-full shadow p-2 w-11 h-11 flex justify-center items-center cursor-pointer hover:shadow-lg">
 								<i className='w-100'>
 									<span><img src="/icons8-linkedin-2-30.svg"/></span>
 								</i>
 							</div>
 						</a>
 						<a href="https://twitter.com/francisjames12_">
-							<div className="mx-1 transition-all rounded-full shadow p-2 w-12 h-12 flex justify-center items-center cursor-pointer hover:shadow-lg">
+							<div className="mx-1 transition-all rounded-full shadow p-2 w-11 h-11 flex justify-center items-center cursor-pointer hover:shadow-lg">
 								<i className='w-100'>
 									<span><img src="/icons8-twitter-30.svg" /></span>
 								</i>
 							</div>
 						</a>
-					</ul> */}
-					<button className="bg-indigo-700 hover:bg-indigo-900 transition-all text-white px-8 
-					text-xs rounded-full">Let's work together</button>
+					</ul>
 				</div>
 			</Container>
 		</nav>

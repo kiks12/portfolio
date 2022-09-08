@@ -2,55 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
 import Container from '../components/Container';
+import LandingCTA from '../components/LandingCTA';
 ---
 
 <Layout title="Portfolio">
 	<Header client:idle/>
 
 	<Container>
-		<section class="w-100 flex items-center justify-between" style="height: 85vh;">
-			<div class="flex-1">
-				<h1 class="text-7xl font-semibold tracking-wide leading-none">
-					Francis James <br/> Tolentino
-				</h1>
-				<h2 class="text-xl font-normal tracking-wider">
-					🧑🏻‍💻 Fullstack Developer 
-					&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-					📲 Flutter Developer
-				</h2>
-				<div class="flex flex-row flex-1 items-center justify-center mt-10">
-					<button class="px-8 rounded-lg transition-all text-white bg-indigo-700 
-					hover:bg-indigo-900 py-3 w-1/2 text-sm">Portfolio</button>
-					<button class="px-8 ml-3 rounded-lg text-sm text-indigo-700 py-3 w-1/2">About</button>
-				</div>
-					<ul class="flex mt-10">
-						<a href="https://github.com/kiks12">
-							<div class="mx-1 transition-all rounded-full shadow p-2 w-11 h-11 flex justify-center items-center cursor-pointer hover:shadow-lg">
-								<i class='w-100'>
-									<span><img src="/icons8-github-30.svg"/></span>
-								</i>
-							</div>
-						</a>
-						<a href="https://www.linkedin.com/in/francis-tolentino-08a428247">
-							<div class="mx-1 transition-all rounded-full shadow p-2 w-11 h-11 flex justify-center items-center cursor-pointer hover:shadow-lg">
-								<i class='w-100'>
-									<span><img src="/icons8-linkedin-2-30.svg"/></span>
-								</i>
-							</div>
-						</a>
-						<a href="https://twitter.com/francisjames12_">
-							<div class="mx-1 transition-all rounded-full shadow p-2 w-11 h-11 flex justify-center items-center cursor-pointer hover:shadow-lg">
-								<i class='w-100'>
-									<span><img src="/icons8-twitter-30.svg" /></span>
-								</i>
-							</div>
-						</a>
-					</ul>
-			</div>
-			<div style="height:40vh;" class="flex-1 rounded-xl ml-5 flex justify-center bg-gray-300 items-center">
-				<h4>IMAGE</h4>
-			</div>
-		</section>
+		<LandingCTA client:load/>
 
 		<!-- <section>
 			<div class="flex justify-between items-center">
