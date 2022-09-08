@@ -2,7 +2,7 @@ import type React from 'react';
 
 const LandingCTA : React.FC<any> = () => {
   return  (
-    <section className="w-100 flex h-screen items-center justify-between">
+    <section className="w-100 flex items-center justify-between" style={{ 'minHeight': '83vh' }}>
 			<div className="flex-1 flex flex-col justify-center items-center">
 				<h1 className="text-8xl font-semibold text-center tracking-wide leading-none">
 					Hi I'm Francis 
