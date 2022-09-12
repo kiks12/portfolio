@@ -2,19 +2,19 @@ import type React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import ShowcaseDescription from './ShowcaseDescription';
 
-const Cheers: React.FC<any> = () => {
+const BlueCollar: React.FC<any> = () => {
   return (
-    <div className='relative h-screen'>
+    <div className='relative h-screen mt-10'>
 
       <AnimatePresence>
         <motion.div 
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className='absolute left-10 bottom-20 h-72 bg-gray-300 rounded-xl overflow-hidden'
+          transition={{ duration: 0.5, delay: 0.9 }}
+          className='absolute top-20 left-10 h-72 bg-gray-300 rounded-xl overflow-hidden'
           style={{ 'width':'37vw' }}
         >
-          <img src="/Cheers/1.png" style={{ 'transform': 'scale(1.02)' }} alt="" />
+          <img src="/BlueCollar/2.png" style={{ 'transform': 'scale(1)' }} alt="" />
         </motion.div>
       </AnimatePresence>
 
@@ -24,10 +24,10 @@ const Cheers: React.FC<any> = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           
-          className='absolute top-20 right-10 h-72 bg-gray-300 rounded-xl overflow-hidden'
+          className='absolute bottom-40 right-20 h-72 bg-gray-300 rounded-xl overflow-hidden'
           style={{ 'width':'37vw' }}
         >
-          <img src="/Cheers/2.png" style={{ 'transform': 'scale(1.02)' }} alt="" />
+          <img src="/BlueCollar/3.png" style={{ 'transform': 'scale(1)', 'backgroundSize': 'cover' }} alt="" />
         </motion.div>
       </AnimatePresence>
 
@@ -49,23 +49,23 @@ const Cheers: React.FC<any> = () => {
             'transform': 'translate(-50%, -50%)'
           }}
         >
-          <img src="/Cheers/3.png" style={{ 'transform': 'scale(1.05)' }} alt="" />
+          <img src="/BlueCollar/1.png" style={{ 'transform': 'scale(1)' }} alt="" />
         </motion.div>
       </AnimatePresence>
 
       <AnimatePresence>
         <motion.div>
           <ShowcaseDescription
-            title='Cheers'
-            tags={['UI/UX', 'Frontend Development']}
+            title='Blueu'
+            tags={['UI/UX', 'Frontend Development', 'Mobile Development']}
             description='adfasdfasdfafadfadf'
-            optionalClasses='absolute right-0 bottom-0'
+            optionalClasses='absolute left-0 bottom-0'
           />
         </motion.div>
       </AnimatePresence>
 
     </div>
-  );
-};
+  )
+}
 
-export default Cheers;
+export default BlueCollar;
