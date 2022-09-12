@@ -1,6 +1,6 @@
 import type React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import ShowcaseDescription from './Portfolio/ShowcaseDescription';
+import ShowcaseDescription from './ShowcaseDescription';
 
 const Cheers: React.FC<any> = () => {
   return (
@@ -11,7 +11,7 @@ const Cheers: React.FC<any> = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className='absolute left-10 bottom-20 h-80 bg-gray-300 rounded-xl overflow-hidden'
+          className='absolute left-10 bottom-20 h-72 bg-gray-300 rounded-xl overflow-hidden'
           style={{ 'width':'37vw' }}
         >
           <img src="/Cheers/1.png" style={{ 'transform': 'scale(1.02)' }} alt="" />
