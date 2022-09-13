@@ -22,7 +22,7 @@ const Footer: React.FC<any> = () => {
             </a>
             <p className="text-xs mt-10 mb-1">🇵🇭 Angeles City, Pampanga, Philippines</p>
             <p className="text-xs my-1">+63 948 279 1258</p>
-            <p className="text-xs my-1">francistolentino1107@gmail</p>
+            <p className="text-xs my-1">francistolentino1107@gmail.com</p>
           </div>
           <div className="flex justify-between flex-1 sm:mt-10">
             <div className="">
