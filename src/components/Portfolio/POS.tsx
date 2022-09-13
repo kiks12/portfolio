@@ -4,7 +4,7 @@ import ShowcaseDescription from './ShowcaseDescription';
 
 const POS: React.FC<any> = () => {
   return (
-    <div className='relative h-screen mt-10'>
+    <div className='relative h-screen md:mt-10 sm:mt-0'>
 
       <AnimatePresence>
         <motion.div 
@@ -58,8 +58,8 @@ const POS: React.FC<any> = () => {
           <ShowcaseDescription
             title='Four Angels'
             tags={['UI/UX', 'Web Development', 'Systems Design', 'Analytics']}
-            description='adfasdfasdfafadfadf'
-            optionalClasses='absolute right-0 bottom-0'
+            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec interdum erat. Aliquam ut turpis vel risus iaculis rutrum. Maecenas malesuada, nisi vitae commodo vulputate, urna mi congue sapien, vitae blandit diam augue eu purus. Nunc in orci justo. Cras eu nibh a nisi congue vulputate. Proin ut luctus lorem. Phasellus arcu augue, tincidunt nec tincidunt et, efficitur eu mi.'
+            optionalClasses='absolute md:left-2/3 md:bottom-0 sm:left-0 bottom-0'
           />
         </motion.div>
       </AnimatePresence>

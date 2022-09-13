@@ -12,18 +12,24 @@ interface ShowcaseDescriptionProps {
 const ShowcaseDescription: React.FC<ShowcaseDescriptionProps> = ({optionalClasses, tags, description, title }) => {
   return (
     <AnimatePresence>
-      <div className={'flex flex-col' + ' ' + optionalClasses}>
-        <h3 className='text-xl font-medium my-2'>{title}</h3>
-        <div className="flex">
-          {
-            tags.map((tag, idx) => (
-              <div key={idx} className={"text-gray-500 text-xs uppercase " + (idx === 0 ? '' : 'ml-4')}>
-                {tag}
-              </div>
-            ))
-          }
+      <div className={'flex flex-col w-[33%]' + ' ' + optionalClasses}>
+        <h3 className='text-2xl font-medium my-2'>{title}</h3>
+        <div className="flex overflow-scroll">
+          <div className="flex">
+            {
+              tags.map((tag, idx) => (
+                <div
+                  key={idx}
+                  className={"text-black uppercase whitespace-nowrap py-2 px-4 bg-indigo-100 font-medium rounded-full " + (idx === 0 ? '' : 'ml-2')}
+                  style={{"fontSize": "0.6em"}}
+                >
+                  {tag}
+                </div>
+              ))
+            }
+          </div>
         </div>
-        <div className='mt-5'>
+        <div className='mt-5 text-xs'>
           {description}
         </div>
       </div>

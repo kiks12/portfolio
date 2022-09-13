@@ -11,7 +11,7 @@ const Monitoring: React.FC<any> = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className='absolute top-20 left-10 h-72 bg-gray-300 rounded-xl overflow-hidden'
+          className='absolute top-12 left-10 h-72 bg-gray-300 rounded-xl overflow-hidden'
           style={{ 'width':'37vw' }}
         >
           <img src="/Monitoring/1.png" style={{ 'transform': 'scale(1.5)' }} alt="" />
@@ -58,7 +58,7 @@ const Monitoring: React.FC<any> = () => {
           <ShowcaseDescription
             title='Visitor Monitoring System'
             tags={['UI/UX', 'Backend', 'Frontend', 'Systems Design']}
-            description='adfasdfasdfafadfadf'
+            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec interdum erat. Aliquam ut turpis vel risus iaculis rutrum. Maecenas malesuada, nisi vitae commodo vulputate, urna mi congue sapien, vitae blandit diam augue eu purus. Nunc in orci justo. Cras eu nibh a nisi congue vulputate. Proin ut luctus lorem. Phasellus arcu augue, tincidunt nec tincidunt et, efficitur eu mi.'
             optionalClasses='absolute left-0 bottom-0'
           />
         </motion.div>

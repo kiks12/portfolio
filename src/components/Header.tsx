@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = () => {
 								Icon
 							</span>
 						</h2>
-						<ul className="flex mx-10 items-center">
+						<ul className="flex mx-10 md:flex sm:hidden items-center">
 							<li className="mx-5 cursor-pointer hover:text-indigo-700">Portfolio</li>
 							<li className="mx-5 cursor-pointer hover:text-indigo-700">About</li>
 						</ul>

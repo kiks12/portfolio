@@ -4,7 +4,7 @@ import Card from '../Card';
 
 const ThreeSplit: React.FC<any> = () => {
   return (
-    <div className="flex justify-center my-5">
+    <div className="flex md:flex-row sm:flex-col justify-center my-5">
       <AnimatePresence>
         <motion.div 
           initial={{ opacity: 0, y: 75 }}
@@ -30,7 +30,7 @@ const ThreeSplit: React.FC<any> = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="ml-7 flex-1"
+          className="md:ml-7 md:mt-0 sm:mt-7 flex-1"
         >
           <Card optionalClasses='flex-1 flex flex-col h-96'>
             <div className="h-48 bg-gray-300 overflow-hidden">
@@ -49,7 +49,7 @@ const ThreeSplit: React.FC<any> = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, delay: 1 }}
-          className="ml-7 flex-1"
+          className="md:ml-7 md:mt-0 sm:mt-7 flex-1"
         >
           <Card optionalClasses='flex-1 flex flex-col h-96'>
             <div className="h-48 bg-gray-300 overflow-hidden">

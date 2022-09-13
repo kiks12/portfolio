@@ -11,8 +11,7 @@ const Cheers: React.FC<any> = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className='absolute left-10 bottom-20 h-72 bg-gray-300 rounded-xl overflow-hidden'
-          style={{ 'width':'37vw' }}
+          className='absolute lg:left-10 lg:bottom-20 md:left-10 md:bottom-32 sm:left-0 sm:bottom-52 lg:h-72 lg:w-2/5 md:h-54 md:w-2/5 sm:h-36 sm:w-3/5 bg-gray-300 rounded-xl overflow-hidden'
         >
           <img src="/Cheers/1.png" style={{ 'transform': 'scale(1.02)' }} alt="" />
         </motion.div>
@@ -24,8 +23,7 @@ const Cheers: React.FC<any> = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           
-          className='absolute top-20 right-10 h-72 bg-gray-300 rounded-xl overflow-hidden'
-          style={{ 'width':'37vw' }}
+          className='absolute lg:top-20 lg:right-10 md:top-32 md:right-10 sm:top-52 sm:right-0 lg:h-72 lg:w-2/5 md:h-54 md:w-2/5 sm:h-36 sm:w-3/5 bg-gray-300 rounded-xl overflow-hidden'
         >
           <img src="/Cheers/2.png" style={{ 'transform': 'scale(1.02)' }} alt="" />
         </motion.div>
@@ -42,7 +40,7 @@ const Cheers: React.FC<any> = () => {
           //   x: 0,
           //   transition: { duration: 3, repeatType: 'loop', repeat: 100 },
           // }}
-          className='absolute bg-gray-300 shadow-xl h-96 w-52 rounded-xl overflow-hidden'
+          className='absolute bg-gray-300 shadow-xl lg:h-96 lg:w-52 md:h-2/4 md:w-40 sm:h-60 sm:w-32 rounded-xl overflow-hidden'
           style={{
             'top': '50%',
             'left': '50%',
@@ -58,8 +56,8 @@ const Cheers: React.FC<any> = () => {
           <ShowcaseDescription
             title='Cheers'
             tags={['UI/UX', 'Frontend Development']}
-            description='adfasdfasdfafadfadf'
-            optionalClasses='absolute right-0 bottom-0'
+            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec interdum erat. Aliquam ut turpis vel risus iaculis rutrum. Maecenas malesuada, nisi vitae commodo vulputate, urna mi congue sapien, vitae blandit diam augue eu purus. Nunc in orci justo. Cras eu nibh a nisi congue vulputate. Proin ut luctus lorem. Phasellus arcu augue, tincidunt nec tincidunt et, efficitur eu mi.'
+            optionalClasses='absolute md:left-2/3 md:bottom-0 sm:left-0 sm:bottom-0'
           />
         </motion.div>
       </AnimatePresence>

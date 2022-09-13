@@ -8,8 +8,8 @@ interface ContainerProps {
 
 const Container : React.FC<ContainerProps> = (props) => {
   return (
-    <div className="md:w-3/5 sm:w-auto md:mx-auto mx-5" style={{
-      "width": "min(80%, 63em)",
+    <div className="mx-auto" style={{
+      "width": "min(90%, 63em)",
       "zIndex": "-1"
     }}>
       {props.children}
