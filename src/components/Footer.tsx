@@ -6,7 +6,7 @@ const Footer: React.FC<any> = () => {
     <footer className='h-96 border border-l-0 border-r-0 mt-10 border-b-0 bg-gray-100 border-gray-300 p-5'>
       <Container>
         <div className="flex md:flex-row sm:flex-col justify-between">
-          <div className="flex-1 mr-24">
+          <div className="flex-1 md:mr-24 sm:mr-0">
             <h4 className='text-xs font-medium mb-10 tracking-wider'>CONTACT US</h4>
             <p className="text-xs my-3">Write me a message, I'll be happy to be meet you.</p>
             <a href="mailto:francistolentino1107@gmail.com">
