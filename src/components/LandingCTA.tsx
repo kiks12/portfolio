@@ -1,15 +1,13 @@
 import type React from 'react';
-import { useEffect } from 'react';
 
-const LandingCTA : React.FC<any> = () => {
-
-	const seePortfolio = () => {
-		console.log(navigator.userAgent);
+export const seePortfolio = () => {
 		window.scrollTo({
 			top: 1600,
 			behavior: 'smooth',
 		},);
 	}
+
+const LandingCTA : React.FC<any> = () => {	
 
   return  (
     <section className="w-100 flex items-center justify-between" style={{ 'minHeight': '83vh' }}>

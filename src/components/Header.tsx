@@ -1,6 +1,7 @@
 
 import type React from 'react';
 import Container from './Container';
+import { seePortfolio } from '../components/LandingCTA';
 
 interface HeaderProps {
 }
@@ -19,7 +20,7 @@ const Header: React.FC<HeaderProps> = () => {
 							</span>
 						</h2>
 						<ul className="flex mx-10 md:flex sm:hidden items-center">
-							<li className="mx-5 cursor-pointer hover:text-indigo-700">Portfolio</li>
+							<li className="mx-5 cursor-pointer hover:text-indigo-700" onClick={seePortfolio}>Portfolio</li>
 							<li className="mx-5 cursor-pointer hover:text-indigo-700">About</li>
 						</ul>
 					</div>
