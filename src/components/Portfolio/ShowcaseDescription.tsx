@@ -1,5 +1,5 @@
 import type React from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 interface ShowcaseDescriptionProps {
   title: string;
@@ -15,8 +15,38 @@ const ShowcaseDescription: React.FC<ShowcaseDescriptionProps> = ({optionalClasse
     <AnimatePresence>
       <div className={isLeft ? 'flex flex-row' : 'flex flex-row-reverse'}>
         <div className={'flex flex-col md:w-[33%] sm:w-100' + ' ' + optionalClasses}>
-          <h3 className='text-2xl font-medium my-2'>{title}</h3>
-          <div className="flex overflow-scroll">
+          <motion.h3 
+            animate={{
+              y:0,
+              opacity: 1,
+            }}
+            initial={{
+              y:75,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 0.6
+            }}
+            className='text-2xl font-medium my-2'
+          >
+            {title}
+          </motion.h3>
+          <motion.div 
+            className="flex overflow-scroll"
+            animate={{
+              y:0,
+              opacity: 1,
+            }}
+            initial={{
+              y:75,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 0.7
+            }}
+          >
             <div className="flex">
               {
                 tags.map((tag, idx) => (
@@ -30,10 +60,24 @@ const ShowcaseDescription: React.FC<ShowcaseDescriptionProps> = ({optionalClasse
                 ))
               }
             </div>
-          </div>
-          <div className='mt-5 text-xs'>
+          </motion.div>
+          <motion.div
+            className='mt-5 text-xs'
+            animate={{
+              y:0,
+              opacity: 1,
+            }}
+            initial={{
+              y:75,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 0.8
+            }}
+          >
             {description}
-          </div>
+          </motion.div>
         </div>
       </div>
     </AnimatePresence>
