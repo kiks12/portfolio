@@ -2,7 +2,7 @@ import type React from 'react';
 
 export const seePortfolio = () => {
 		window.scrollTo({
-			top: 1600,
+			top: 1800,
 			behavior: 'smooth',
 		},);
 	}
