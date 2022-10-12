@@ -1,10 +1,17 @@
 
 import type React from 'react';
 import Container from './Container';
-import { seePortfolio } from '../components/LandingCTA';
+import { scrollToPortfolio } from '../components/LandingCTA';
 import { AnimatePresence, motion } from 'framer-motion';
 
 interface HeaderProps {
+}
+
+export const scrollToAbout = () => {
+	window.scrollTo({
+		top: 5600,
+		behavior: 'smooth',
+	},);
 }
 
 const Header: React.FC<HeaderProps> = () => {
@@ -51,7 +58,7 @@ const Header: React.FC<HeaderProps> = () => {
 											delay: 1.3,
 										}}
 										className="mx-5 cursor-pointer hover:text-indigo-700" 
-										onClick={seePortfolio}
+										onClick={scrollToPortfolio}
 									>
 										Portfolio
 									</motion.li>
@@ -70,6 +77,7 @@ const Header: React.FC<HeaderProps> = () => {
 											duration: 0.4,
 											delay: 1.2,
 										}}
+										onClick={scrollToAbout}
 									>
 										About
 									</motion.li>

@@ -1,12 +1,12 @@
 import type React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-export const seePortfolio = () => {
-		window.scrollTo({
-			top: 1800,
-			behavior: 'smooth',
-		},);
-	}
+export const scrollToPortfolio = () => {
+	window.scrollTo({
+		top: 1800,
+		behavior: 'smooth',
+	},);
+}
 
 const LandingCTA : React.FC<any> = () => {	
 
@@ -48,7 +48,7 @@ const LandingCTA : React.FC<any> = () => {
 						</motion.h2>
 						<div className="flex  md:flex-row sm:flex-col-reverse w-100 items-center justify-center mt-8">
 							<motion.button 
-								onClick={seePortfolio}
+								onClick={scrollToPortfolio}
 								className="px-8 rounded-lg transition-all text-indigo-700 py-2 text-sm sm:mt-4 md:mt-0"
 								animate={{
 									x:0,
