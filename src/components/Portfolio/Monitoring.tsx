@@ -4,32 +4,26 @@ import ShowcaseDescription from './ShowcaseDescription';
 
 const Monitoring: React.FC<any> = () => {
   return (
-    <div className='relative h-screen mt-10'>
+    <div className='relative h-screen md:mt-10 sm:mt-0'>
 
       <AnimatePresence>
         <motion.div 
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className='absolute top-12 left-10 h-72 bg-gray-300 rounded-xl overflow-hidden'
-          style={{ 'width':'37vw' }}
+          className='absolute flex items-center justify-center lg:top-20 md:top-20 sm:top-52 lg:left-10 lg:h-72 md:h-64 sm:h-40 lg:w-1/2 md:w-3/5 sm:w-4/6 bg-gray-300 rounded-xl overflow-hidden'
         >
-          <img src="/Monitoring/1.png" style={{ 'transform': 'scale(1.5)' }} alt="" />
+          <img src="/Monitoring/1.png" className="h-full w-full object-cover" alt="" />
         </motion.div>
-      </AnimatePresence>
 
-      <AnimatePresence>
         <motion.div 
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          
-          className='absolute bottom-40 right-20 h-64 bg-gray-300 rounded-xl overflow-hidden shadow-xl'
-          style={{ 'width':'45vw' }}
+          className='absolute flex items-center justify-center lg:bottom-28 sm:bottom-56 lg:right-10 sm:right-0 lg:h-72 md:h-64 sm:h-40 lg:w-1/2 md:w-3/5 sm:w-4/6 overflow-hidden bg-gray-300 rounded-xl shadow-xl'
         >
-          <img src="/Monitoring/3.png" style={{ 'transform': 'scale(1.01)', 'backgroundSize': 'cover' }} alt="" />
+          <img src="/Monitoring/3.png" className="h-full w-full object-cover" alt="" />
         </motion.div>
-      </AnimatePresence>
 {/* 
       <AnimatePresence>
         <motion.div 
@@ -53,7 +47,6 @@ const Monitoring: React.FC<any> = () => {
         </motion.div>
       </AnimatePresence> */}
 
-      <AnimatePresence>
         <motion.div>
           <ShowcaseDescription
             title='Visitor Monitoring System'

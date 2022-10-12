@@ -4,32 +4,27 @@ import ShowcaseDescription from './ShowcaseDescription';
 
 const Cheers: React.FC<any> = () => {
   return (
-    <div className='relative h-screen'>
+    <div className='relative h-screen red-bg-100'>
 
       <AnimatePresence>
         <motion.div 
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className='absolute lg:left-10 lg:bottom-20 md:left-10 md:bottom-32 sm:left-0 sm:bottom-52 lg:h-72 lg:w-2/5 md:h-54 md:w-2/5 sm:h-36 sm:w-3/5 bg-gray-300 rounded-xl overflow-hidden'
+          className='absolute flex items-center justify-center lg:left-10 md:left-10 sm:left-0 lg:bottom-20 md:bottom-32 sm:bottom-52 lg:h-72 md:h-54 sm:h-36 lg:w-2/5 md:w-2/5 sm:w-3/5 bg-gray-300 rounded-xl overflow-hidden'
         >
-          <img src="/Cheers/1.png" style={{ 'transform': 'scale(1.02)' }} alt="" />
+          <img src="/Cheers/1.png" className='w-full h-full object-cover' alt="" />
         </motion.div>
-      </AnimatePresence>
 
-      <AnimatePresence>
         <motion.div 
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          
-          className='absolute lg:top-20 lg:right-10 md:top-32 md:right-10 sm:top-52 sm:right-0 lg:h-72 lg:w-2/5 md:h-54 md:w-2/5 sm:h-36 sm:w-3/5 bg-gray-300 rounded-xl overflow-hidden'
+          className='absolute flex items-center justify-center lg:top-20 md:top-32 sm:top-52 lg:right-10 md:right-10 sm:right-0 lg:h-72 md:h-54 sm:h-36 lg:w-2/5 md:w-2/5 sm:w-3/5 rounded-xl overflow-hidden'
         >
-          <img src="/Cheers/2.png" style={{ 'transform': 'scale(1.02)' }} alt="" />
+          <img src="/Cheers/2.png" className='w-full h-full object-cover' alt="" />
         </motion.div>
-      </AnimatePresence>
 
-      <AnimatePresence>
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -40,18 +35,16 @@ const Cheers: React.FC<any> = () => {
           //   x: 0,
           //   transition: { duration: 3, repeatType: 'loop', repeat: 100 },
           // }}
-          className='absolute bg-gray-300 shadow-xl lg:h-96 lg:w-52 md:h-2/4 md:w-40 sm:h-60 sm:w-32 rounded-xl overflow-hidden'
+          className='absolute flex items-center justify-center bg-gray-300 shadow-xl lg:h-96 lg:w-52 md:h-2/4 md:w-40 sm:h-60 sm:w-32 rounded-xl overflow-hidden'
           style={{
             'top': '50%',
             'left': '50%',
             'transform': 'translate(-50%, -50%)'
           }}
         >
-          <img src="/Cheers/3.png" style={{ 'transform': 'scale(1.05)' }} alt="" />
+          <img src="/Cheers/3.png" className='w-full h-full object-cover' alt="" />
         </motion.div>
-      </AnimatePresence>
 
-      <AnimatePresence>
         <motion.div>
           <ShowcaseDescription
             title='Cheers'
