@@ -11,9 +11,9 @@ const ImageProcessing: React.FC<any> = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className='absolute lg:left-20 lg:bottom-0 md:left-10 md:bottom-32 sm:left-0 sm:bottom-52 lg:h-3/4 lg:w-52 md:h-54 md:w-2/5 sm:h-36 sm:w-3/5 bg-gray-300 rounded-xl overflow-hidden'
+          className='absolute flex items-center justify-center lg:left-20 md:left-10 sm:left-0 lg:bottom-0 md:bottom-20 sm:bottom-52 lg:h-3/4 md:h-1/2 sm:h-1/2 lg:w-52 md:w-1/5 sm:w-40 bg-gray-300 rounded-xl overflow-hidden'
         >
-          <img src="/Image-Processing/2.png" style={{ 'transform': 'scale(1.05)' }} alt="" />
+          <img src="/Image-Processing/2.png" className='w-full h-full object-cover' alt="" />
         </motion.div>
       </AnimatePresence>
 
@@ -22,9 +22,9 @@ const ImageProcessing: React.FC<any> = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className='absolute lg:left-60 lg:bottom-10 md:left-10 md:bottom-32 sm:left-0 sm:bottom-52 lg:h-3/4 lg:w-52 md:h-54 md:w-2/5 sm:h-36 sm:w-3/5 bg-gray-300 rounded-xl overflow-hidden shadow-xl'
+          className='absolute flex items-center justify-center lg:left-60 md:left-36 sm:left-36 lg:bottom-10 md:bottom-32 sm:bottom-60 lg:h-3/4 md:h-1/2 sm:h-1/2 lg:w-52 md:w-1/5 sm:w-40 bg-gray-300 rounded-xl overflow-hidden shadow-xl'
         >
-          <img src="/Image-Processing/4.png" style={{ 'transform': 'scale(1.05)' }} alt="" />
+          <img src="/Image-Processing/4.png" className='w-full h-full object-cover' alt="" />
         </motion.div>
       </AnimatePresence>
 
@@ -34,9 +34,9 @@ const ImageProcessing: React.FC<any> = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.7 }}
           
-          className='absolute lg:top-20 lg:right-96 md:top-32 md:right-10 sm:top-52 sm:right-0 lg:h-3/4 lg:w-52 md:h-54 md:w-2/5 sm:h-36 sm:w-3/5 bg-gray-300 rounded-xl overflow-hidden shadow-xl'
+          className='absolute flex items-center justify-center lg:left-96 md:left-64 sm:left-72 lg:bottom-20 md:bottom-44 sm:bottom-72 lg:h-3/4 md:h-1/2 sm:h-1/2 lg:w-52 md:w-1/5 sm:w-40 bg-gray-300 rounded-xl overflow-hidden shadow-xl'
         >
-          <img src="/Image-Processing/3.png" style={{ 'transform': 'scale(1.05)' }} alt="" />
+          <img src="/Image-Processing/3.png" className='w-full h-full object-cover' alt="" />
         </motion.div>
       </AnimatePresence>
 
