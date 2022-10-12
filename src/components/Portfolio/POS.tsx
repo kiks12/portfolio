@@ -22,33 +22,11 @@ const POS: React.FC<any> = () => {
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className='absolute flex items-center justify-center lg:top-28 md:top-28 sm:top-56 lg:right-10 sm:right-0 lg:h-72 md:h-64 sm:h-40 lg:w-1/2 md:w-3/5 sm:w-4/6 overflow-hidden bg-gray-300 rounded-xl shadow-xl'
+          className='absolute flex items-center justify-center lg:top-20 md:top-28 sm:top-56 lg:right-10 sm:right-0 lg:h-72 md:h-64 sm:h-40 lg:w-1/2 md:w-3/5 sm:w-4/6 overflow-hidden bg-gray-300 rounded-xl shadow-xl'
         >
           <img src="/POS/2.png" className='w-full h-full object-cover' alt="" />
         </motion.div>
       </AnimatePresence>
-{/* 
-      <AnimatePresence>
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          // whileInView={{
-          //   scale: [1.05, 1, 1.07, 1, 1.05],
-          //   y: 0,
-          //   x: 0,
-          //   transition: { duration: 3, repeatType: 'loop', repeat: 100 },
-          // }}
-          className='absolute bg-gray-300 shadow-xl h-96 w-52 rounded-xl overflow-hidden'
-          style={{
-            'top': '50%',
-            'left': '50%',
-            'transform': 'translate(-50%, -50%)'
-          }}
-        >
-          <img src="/Cheers/3.png" style={{ 'transform': 'scale(1.05)' }} alt="" />
-        </motion.div>
-      </AnimatePresence> */}
 
       <AnimatePresence>
         <motion.div>
