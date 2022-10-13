@@ -4,9 +4,17 @@ import type React from 'react';
 const Profile: React.FC<any> = () => {
   return (
     <AnimatePresence>
-      <div className='h-screen relative flex'>
+      <div className='h-screen flex'>
         <div className="lg:mr-10 sm:mr-0 lg:w-3/4 md:w-full sm:w-full">
-          <div className="flex flex-col overflow-wrap">
+          <div className="flex flex-col">
+            <motion.div 
+              className="lg:hidden md:hidden sm:flex w-full items-center justify-center my-10 "
+            >
+              <div className="rounded-full w-56 h-56 flex items-center overflow-hidden justify-center">
+                <img src="/About/prof.jpg" alt="" />
+              </div>
+            </motion.div>
+
             <motion.h3
               className="text-2xl font-medium"
               initial={{
@@ -42,7 +50,7 @@ const Profile: React.FC<any> = () => {
               Currently living in Angeles City, Pampanga, Philippines. 
             </motion.div>
           </div>
-          <div className="flex flex-col mt-12 overflow-wrap">
+          <div className="flex flex-col mt-12">
             <motion.h3
               className="text-2xl font-medium"
               initial={{
