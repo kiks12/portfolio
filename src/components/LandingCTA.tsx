@@ -86,6 +86,7 @@ const LandingCTA : React.FC<any> = () => {
 						</div>
 					</div>
 				</section>
+
 				<motion.div
 					initial={{
 						y:-200,
@@ -102,14 +103,38 @@ const LandingCTA : React.FC<any> = () => {
 					transition={{
 						duration: 0.2,
 					}}
-					className='bg-indigo-200 absolute top-0'
+					className='lg:block sm:hidden bg-indigo-200 absolute top-0 rounded-b-3xl'
 					style={{
 						width:'500px',
 						height: '500px',
 						zIndex:'-1',
 						transform: 'skew(-20deg)'
 					}}
-					></motion.div>
+				></motion.div>
+				<motion.div
+					initial={{
+						y:-200,
+						x:100,
+						opacity:0,
+						skew: -20,
+					}}
+					animate={{
+						y:0,
+						x:0,
+						opacity: 1,
+						skew: -20,
+					}}
+					transition={{
+						duration: 0.2,
+					}}
+					className='lg:hidden sm:hidden bg-indigo-200 absolute top-0 rounded-b-3xl'
+					style={{
+						width:'150px',
+						height: '250px',
+						zIndex:'-1',
+						transform: 'skew(-20deg)'
+					}}
+				></motion.div>
 				<motion.div
 					initial={{
 						y:200,
@@ -127,14 +152,40 @@ const LandingCTA : React.FC<any> = () => {
 						duration: 0.2,
 						delay: 0.1,
 					}}
-					className='bg-gradient-to-b from-indigo-100 absolute top-40 left-10'
+					className='lg:block sm:hidden bg-gradient-to-b from-indigo-100 absolute top-40 left-10 rounded-l-3xl'
 					style={{
 						width:'400px',
 						height: '400px',
 						zIndex:'-1',
 						transform: 'skew(-20deg)'
 					}}
-					></motion.div>
+				></motion.div>
+				<motion.div
+					initial={{
+						y:200,
+						x:-100,
+						opacity:0,
+						skew: -20,
+					}}
+					animate={{
+						y:0,
+						x:0,
+						opacity: 1,
+						skew: -20,
+					}}
+					transition={{
+						duration: 0.2,
+						delay: 0.1,
+					}}
+					className='lg:hidden sm:block bg-gradient-to-b from-indigo-100 absolute top-40 left-10 rounded-l-3xl'
+					style={{
+						width:'300px',
+						height: '250px',
+						zIndex:'-1',
+						transform: 'skew(-20deg)'
+					}}
+				></motion.div>
+
 				<motion.div
 					initial={{
 						y:200,
@@ -151,10 +202,34 @@ const LandingCTA : React.FC<any> = () => {
 					transition={{
 						duration: 0.2,
 					}}
-					className='bg-gradient-to-b from-indigo-400 t-rounded-3xl absolute top-24 right-24'
+					className='lg:block sm:hidden bg-gradient-to-b from-indigo-400 rounded-l-3xl absolute top-24 right-24'
 					style={{
 						width:'600px',
 						height: '600px',
+						zIndex:'-1',
+						transform: 'skew(-20deg)'
+					}}
+				></motion.div>
+				<motion.div
+					initial={{
+						y:200,
+						x:-100,
+						opacity:0,
+						skew: -20,
+					}}
+					animate={{
+						y:0,
+						x:0,
+						opacity: 1,
+						skew: -20,
+					}}
+					transition={{
+						duration: 0.2,
+					}}
+					className='lg:hidden sm:block bg-gradient-to-b from-indigo-400 rounded-l-3xl absolute top-20 right-10'
+					style={{
+						width:'350px',
+						height: '200px',
 						zIndex:'-1',
 						transform: 'skew(-20deg)'
 					}}
