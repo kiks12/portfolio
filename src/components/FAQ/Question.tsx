@@ -4,6 +4,7 @@ import type React from 'react';
 interface QuestionProps {
   id: number;
   question: string;
+  answer: string;
   active: number;
   setActive: React.Dispatch<React.SetStateAction<number>>;
 }
@@ -11,7 +12,7 @@ interface QuestionProps {
 const ACTIVE_CLASS = 'cursor-pointer p-4 rounded mt-3 hover:shadow shadow'
 const INACTIVE_CLASS = 'cursor-pointer p-4 rounded mt-3 hover:shadow'
 
-const Question: React.FC<QuestionProps> = ({ question, active, id, setActive }) => {
+const Question: React.FC<QuestionProps> = ({ question, answer, active, id, setActive }) => {
 
   const containerOnClick = () => {
     setActive(prev => prev === id ? 0 : id);
@@ -45,7 +46,7 @@ const Question: React.FC<QuestionProps> = ({ question, active, id, setActive }) 
             }}
             className="min-h-max text-xs mt-6 mb-3 leading-5"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed lorem eleifend, feugiat nunc et, feugiat neque. Cras molestie turpis vel metus ornare laoreet. Curabitur accumsan porttitor ex, id malesuada arcu faucibus ullamcorper. Aenean et augue ac ligula fermentum pharetra. Vivamus placerat dui leo, ut dictum massa volutpat in. In viverra lacus pretium lorem facilisis, eget vehicula quam rhoncus. Sed venenatis urna et neque vehicula tristique.
+            {answer}
           </motion.div>
         </AnimatePresence>
       }
