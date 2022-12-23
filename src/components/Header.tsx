@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export const scrollToAbout = () => {
 	window.scrollTo({
-		top: 5600,
+		top: 6500,
 		behavior: 'smooth',
 	},);
 }
