@@ -31,6 +31,14 @@ const Achievements: React.FC<any> = () => {
           </div>
         </div>
       </div>
+      <div className="flex md:flex-row sm:flex-col mt-12">
+          <div className="md:w-1/2 sm:w-full md:mr-4 sm:mr-0">
+            <h3 className='text-3xl font-medium'>Champion 🏅</h3>
+            <p className='text-xs mt-2'>
+              in Python Competitive Programming in the 6th CpE Challenge in ICpEP Region 3 (Regionals s.y. 2022-2023)
+            </p>
+          </div>
+        </div>
     </AnimatePresence>
   )
 }
