@@ -55,8 +55,8 @@ const BlueCollar: React.FC<any> = () => {
         <motion.div>
           <ShowcaseDescription
             title='Blueu'
-            tags={['UI/UX', 'Frontend Development', 'Mobile Development']}
-            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec interdum erat. Aliquam ut turpis vel risus iaculis rutrum. Maecenas malesuada, nisi vitae commodo vulputate, urna mi congue sapien, vitae blandit diam augue eu purus. Nunc in orci justo. Cras eu nibh a nisi congue vulputate. Proin ut luctus lorem. Phasellus arcu augue, tincidunt nec tincidunt et, efficitur eu mi.'
+            tags={['UI/UX', 'Frontend Development', 'Mobile Development', 'Flutter', 'React JS', 'HTML5', 'TailwindCSS', 'Figma']}
+            description='I built the Frontend of Bleue startup not recognized as of the moment, using React JS. I created the design prototype using Figma. Aside from the frontend development, I also created the foundation of the Mobile App UI and integrated the RESTful API of blueu.'
             optionalClasses='absolute left-0 bottom-0'
           />
         </motion.div>

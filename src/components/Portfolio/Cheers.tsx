@@ -29,12 +29,6 @@ const Cheers: React.FC<any> = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          // whileInView={{
-          //   scale: [1.05, 1, 1.07, 1, 1.05],
-          //   y: 0,
-          //   x: 0,
-          //   transition: { duration: 3, repeatType: 'loop', repeat: 100 },
-          // }}
           className='absolute flex items-center justify-center bg-gray-300 shadow-xl lg:h-96 lg:w-52 md:h-2/4 md:w-40 sm:h-60 sm:w-32 rounded-xl overflow-hidden'
           style={{
             'top': '50%',
@@ -48,8 +42,8 @@ const Cheers: React.FC<any> = () => {
         <motion.div>
           <ShowcaseDescription
             title='Cheers'
-            tags={['UI/UX', 'Frontend Development']}
-            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec interdum erat. Aliquam ut turpis vel risus iaculis rutrum. Maecenas malesuada, nisi vitae commodo vulputate, urna mi congue sapien, vitae blandit diam augue eu purus. Nunc in orci justo. Cras eu nibh a nisi congue vulputate. Proin ut luctus lorem. Phasellus arcu augue, tincidunt nec tincidunt et, efficitur eu mi.'
+            tags={['UI/UX', 'Frontend Development', 'Figma', 'React JS', 'HTML5', 'TailwindCSS']}
+            description='I created a UI prototype and writtend the basic foundational code of the frontend of Cheers using React JS. To Create the UI Design and Prototype I used Figma. Cheers is a platform where users can find a bar near to them.'
             optionalClasses='absolute md:left-2/3 md:bottom-0 sm:left-0 sm:bottom-0'
           />
         </motion.div>

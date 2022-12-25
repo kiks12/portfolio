@@ -50,8 +50,8 @@ const Monitoring: React.FC<any> = () => {
         <motion.div>
           <ShowcaseDescription
             title='Visitor Monitoring System'
-            tags={['UI/UX', 'Backend', 'Frontend', 'Systems Design']}
-            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec interdum erat. Aliquam ut turpis vel risus iaculis rutrum. Maecenas malesuada, nisi vitae commodo vulputate, urna mi congue sapien, vitae blandit diam augue eu purus. Nunc in orci justo. Cras eu nibh a nisi congue vulputate. Proin ut luctus lorem. Phasellus arcu augue, tincidunt nec tincidunt et, efficitur eu mi.'
+            tags={['UI/UX', 'Backend', 'Frontend', 'Systems Design', 'PHP', 'HTML5', 'CSS3']}
+            description='This Visitor Monitoring System is a Web Application created with PHP. The system is my entry for the 2022 Web Development Challenge in our Univserty (Don Honorio Ventura State University). The basic barcode and QR code scanning, audit trails, and reports applies in this application. '
             optionalClasses='absolute left-0 bottom-0'
           />
         </motion.div>

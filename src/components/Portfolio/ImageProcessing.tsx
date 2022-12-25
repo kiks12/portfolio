@@ -43,9 +43,9 @@ const ImageProcessing: React.FC<any> = () => {
       <AnimatePresence>
         <motion.div>
           <ShowcaseDescription
-            title='Android Image Processing'
+            title='EyeTechnology'
             tags={['UI/UX', 'Flutter', 'Mobile Development']}
-            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec interdum erat. Aliquam ut turpis vel risus iaculis rutrum. Maecenas malesuada, nisi vitae commodo vulputate, urna mi congue sapien, vitae blandit diam augue eu purus. Nunc in orci justo. Cras eu nibh a nisi congue vulputate. Proin ut luctus lorem. Phasellus arcu augue, tincidunt nec tincidunt et, efficitur eu mi.'
+            description='EyeTechnology is a thesis requirement application I created using Flutter and Python. I used Python for the machine learning part and Flutter for the Mobile Application Framework. EyeTechnology has Image, Color, and Text Recognition, built to help those people who are visually impaired.'
             optionalClasses='absolute md:left-2/3 md:bottom-0 sm:left-0 sm:bottom-0'
           />
         </motion.div>

@@ -32,8 +32,8 @@ const POS: React.FC<any> = () => {
         <motion.div>
           <ShowcaseDescription
             title='Four Angels'
-            tags={['UI/UX', 'Web Development', 'Systems Design', 'Analytics']}
-            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec interdum erat. Aliquam ut turpis vel risus iaculis rutrum. Maecenas malesuada, nisi vitae commodo vulputate, urna mi congue sapien, vitae blandit diam augue eu purus. Nunc in orci justo. Cras eu nibh a nisi congue vulputate. Proin ut luctus lorem. Phasellus arcu augue, tincidunt nec tincidunt et, efficitur eu mi.'
+            tags={['UI/UX', 'Web Development', 'Systems Design', 'Analytics', 'Vue JS', 'PHP', 'HTML5', 'CSS3']}
+          description='This Point of Sale System is a custom built system for our retail store Four Angels. It is built using PHP for the backend and Vue JS in the frontend. It uses the basic barcode scanning and receipt printing mechanism. Also, it has a sophisticated analytics and report tools integration. The only downside is that it is not integrated with a Cash Register.'
             optionalClasses='absolute md:left-2/3 md:bottom-0 sm:left-0 bottom-0'
           />
         </motion.div>
