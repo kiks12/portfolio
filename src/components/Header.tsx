@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = () => {
 									}}
 								>
 									<span className="font-black text-gradient">
-										Icon
+										<img src='/logo.svg' className='h-12 w-12'/>
 									</span>
 								</motion.h2>
 								<ul className="flex mx-10 md:flex sm:hidden items-center">
